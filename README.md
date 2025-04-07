@@ -1,4 +1,4 @@
-# Sonic Ether Global Illumination (SEGI for URP ~ Fully Dynamic Global Illumination using Voxel Cone Tracing)
+# Sonic Ether Global Illumination URP (SEGI but for URP)
 ![Screenshot](Thumbnail.gif)
 
 SEGI URP is a fully dynamic global illumination which includes both indirect diffuse gi and reflections. SEGI URP utilize voxel based approach with cone tracing therefore producing noise-free global illumination and also does not need to rely on temporal denoiser. Please watch the video guide for better understanding on the installation process. This project is a hobby project and due to very limited free time available, we are not always online all the time to help with fixing issues.
