@@ -9,7 +9,7 @@ Features:
 3. Supports both static and dynamic objects (particle systems too).
 4. Supports directional light and emissive lights / meshes.
 6. Does not require RTX hardware.
-7. Supports Deferred Rendering by default (Forward/Forward+ requires extra setup).
+7. Supports Forward, Forward+, and Deferred Rendering.
 
 Limitations:
 1. Only supports URP (Universal Render Pipeline).
