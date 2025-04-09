@@ -15,11 +15,11 @@
 
 <h2>Limitations</h2>
 <ol>
+  <li>Not beginner-friendly.</li>
   <li>Only supports URP (Universal Render Pipeline).</li>
   <li>Render Graph is not yet supported (Needs to enable compatibility mode).</li>
   <li>Does not support point lights, spot lights, area lights. (Please use emissive meshes instead).</li>
   <li>Does not support mobile.</li>
-  <li>Not beginner-friendly.</li>
   <li>Light Leaking may occur in some areas due to voxel size.</li>
 </ol>
 
