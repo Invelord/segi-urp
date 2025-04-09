@@ -6,7 +6,7 @@
 <h2>Breakdown Summary</h2>
 
 ![Screenshot](voxel-gi-process.jpg)
-<div align="justify">SEGI URP use the following process. Firstly, external cameras are deployed to render voxels and voxel shadow map. To support forward/forward+ rendering, we added a custom renderer feature which grabs the required gbuffers (e.g. albedo, specular, etc). Next, to keep things simple, a fullscreen shader is used to trace the voxel and compute both reflections and indirect diffuse gi. This process is often done in separate passes, however for simplicity, we combined them in one fullscreen shadergraph. Temporal and Spatial denoiser can be used if we add random sampling, however we already get good results without the need of denoisers. We aimed to make things more user-friendly but in the end it actually makes it more complex and very very confusing. The above are some screenshots of various textures / buffers / whatever you want to call them which contributes to the final result of the global illumination.</div>
+<div align="justify">SEGI URP use the following process. Firstly, external cameras are deployed to render voxels and voxel shadow map. To support forward/forward+ rendering, we added a custom renderer feature which grabs the required gbuffers (e.g. albedo, specular, etc). Next, to keep things simple, a fullscreen shader is used to trace the voxel and compute both reflections and indirect diffuse gi. This process is often done in separate passes, however for simplicity, we combined them in one fullscreen shadergraph. Temporal and Spatial denoiser can be used if we add random sampling, however we were too lazy to make one. We aimed to make things more user-friendly but in the end we end up with more complex shaders and very very confusing which led us to basically pressed the 'surrender' button. The above are some screenshots of various textures / buffers / whatever you want to call them which contributes to the final result of the global illumination.</div>
 
 <h2>Features</h2>
 <ol>
@@ -25,6 +25,7 @@
   <li>Render Graph is not yet supported (Needs to enable compatibility mode).</li>
   <li>Does not support point lights, spot lights, area lights. (Please use emissive meshes instead).</li>
   <li>Does not support mobile.</li>
+  <li>Very heavy in terms of performance.</li>
   <li>Light Leaking may occur in some areas due to voxel size.</li>
 </ol>
 
