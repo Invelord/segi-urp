@@ -25,6 +25,7 @@
 
 <h2>Breakdown Summary</h2>
 <div align="justify">SEGI URP use the following process. Firstly, external cameras are deployed to render voxels (including voxel shadow map). Next, to keep things simple, a fullscreen shader is used to trace the voxel and compute both reflections and indirect diffuse gi. This process is often done in separate passes, however for simplicity, we combined them in one fullscreen shadergraph. We aimed to make things more user-friendly but in the end it actually makes it more complex and very very confusing. Below are some screenshots of various textures / buffers / whatever you want to call them which contributes to the final result of the global illumination.</div>
+
 ![Screenshot](voxel-gi-process.jpg)
 
 <h2>Credits</h2>
