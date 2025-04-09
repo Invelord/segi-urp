@@ -3,21 +3,25 @@
 
 SEGI URP is a fully dynamic global illumination which includes both indirect diffuse gi and reflections. SEGI URP utilize voxel based approach with cone tracing therefore producing noise-free global illumination and also does not need to rely on temporal denoiser. Please watch the video guide for better understanding on the installation process. This project is a hobby project and due to very limited free time available, we are not always online all the time to help with fixing issues.
 
-<h2>Features</h2>:<br>
-1. World Space Indirect Diffuse GI through Voxel Cone Tracing.
-2. World Space Specular Reflections through Voxel Cone Tracing.
-3. Supports both static and dynamic objects (particle systems too).
-4. Supports directional light and emissive lights / meshes.
-6. Does not require RTX hardware.
-7. Supports Forward, Forward+, and Deferred Rendering.
+<h2>Features</h2>:
+<ol>
+  <li>World Space Indirect Diffuse GI through Voxel Cone Tracing.</li>
+  <li>World Space Specular Reflections through Voxel Cone Tracing.</li>
+  <li>Supports both static and dynamic objects (particle systems too).</li>
+  <li>Supports directional light and emissive lights / meshes.</li>
+  <li>Does not require RTX hardware.</li>
+  <li>Supports Forward, Forward+, and Deferred Rendering.</li>
+</ol>
 
-<h2>Limitations</h2>:<br>
-1. Only supports URP (Universal Render Pipeline).
-2. Render Graph is not yet supported (Needs to enable compatibility mode).
-3. Does not support point lights, spot lights, area lights. (Please use emissive meshes instead).
-4. Does not support mobile.
-5. Not beginner-friendly.
-6. Light Leaking in some areas.
+<h2>Limitations</h2>:
+<ol>
+  <li>Only supports URP (Universal Render Pipeline).</li>
+  <li>Render Graph is not yet supported (Needs to enable compatibility mode).</li>
+  <li>Does not support point lights, spot lights, area lights. (Please use emissive meshes instead).</li>
+  <li>Does not support mobile.</li>
+  <li>Not beginner-friendly.</li>
+  <li>Light Leaking in some areas.</li>
+</ol>
 
 Credits:
 - https://github.com/sonicether/SEGI
