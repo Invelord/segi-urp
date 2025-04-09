@@ -18,13 +18,13 @@ MonoBehaviour:
     m_Value: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.98
+    m_Value: 1
   scatter:
     m_OverrideState: 1
-    m_Value: 0.737
+    m_Value: 0.611
   clamp:
     m_OverrideState: 0
     m_Value: 65472
@@ -131,3 +131,180 @@ MonoBehaviour:
   maxNits:
     m_OverrideState: 1
     m_Value: 647
+--- !u!114 &7093433952773926621
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd03cbbfa7b7fe4dbc3d7709b42d662, type: 3}
+  m_Name: ScreenSpaceGlobalIlluminationVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  <displayName>k__BackingField: Screen Space Global Illumination
+  enable:
+    <debugId>k__BackingField: enable
+    m_OverrideState: 1
+    m_Value: 1
+  thicknessMode:
+    <debugId>k__BackingField: thicknessMode
+    m_OverrideState: 1
+    m_Value: 0
+  depthBufferThickness:
+    <debugId>k__BackingField: depthBufferThickness
+    m_OverrideState: 1
+    m_Value: 0.5
+  quality:
+    <debugId>k__BackingField: quality
+    m_OverrideState: 1
+    m_Value: 0
+  fullResolutionSS:
+    <debugId>k__BackingField: fullResolutionSS
+    m_OverrideState: 1
+    m_Value: 0
+  resolutionScaleSS:
+    <debugId>k__BackingField: resolutionScaleSS
+    m_OverrideState: 1
+    m_Value: 0.25
+  sampleCount:
+    <debugId>k__BackingField: sampleCount
+    m_OverrideState: 1
+    m_Value: 16
+  maxRaySteps:
+    <debugId>k__BackingField: maxRaySteps
+    m_OverrideState: 1
+    m_Value: 32
+  denoiseSS:
+    <debugId>k__BackingField: denoiseSS
+    m_OverrideState: 1
+    m_Value: 0
+  denoiserAlgorithmSS:
+    <debugId>k__BackingField: denoiserAlgorithmSS
+    m_OverrideState: 1
+    m_Value: 1
+  denoiseIntensitySS:
+    <debugId>k__BackingField: denoiseIntensitySS
+    m_OverrideState: 1
+    m_Value: 0.95
+  denoiserRadiusSS:
+    <debugId>k__BackingField: denoiserRadiusSS
+    m_OverrideState: 1
+    m_Value: 1
+  secondDenoiserPassSS:
+    <debugId>k__BackingField: secondDenoiserPassSS
+    m_OverrideState: 1
+    m_Value: 1
+  rayMiss:
+    <debugId>k__BackingField: rayMiss
+    m_OverrideState: 1
+    m_Value: 0
+  indirectDiffuseLightingMultiplier:
+    <debugId>k__BackingField: indirectDiffuseLightingMultiplier
+    m_OverrideState: 1
+    m_Value: 1
+  indirectDiffuseRenderingLayers:
+    <debugId>k__BackingField: indirectDiffuseRenderingLayers
+    m_OverrideState: 1
+    m_Value:
+      m_Bits: 4294967295
+--- !u!114 &8043362977634172986
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6d1d4d11bcfd94c86688ee312adacc, type: 3}
+  m_Name: ScreenSpacePathTracing
+  m_EditorClassIdentifier: 
+  active: 0
+  <displayName>k__BackingField: 
+  state:
+    <debugId>k__BackingField: state
+    m_OverrideState: 1
+    m_Value: 0
+  maximumSamples:
+    <debugId>k__BackingField: maximumSamples
+    m_OverrideState: 1
+    m_Value: 512
+  maximumDepth:
+    <debugId>k__BackingField: maximumDepth
+    m_OverrideState: 1
+    m_Value: 1
+  maximumIntensity:
+    <debugId>k__BackingField: maximumIntensity
+    m_OverrideState: 1
+    m_Value: 1
+  samplesPerPixel:
+    <debugId>k__BackingField: samplesPerPixel
+    m_OverrideState: 1
+    m_Value: 16
+  maximumSteps:
+    <debugId>k__BackingField: maximumSteps
+    m_OverrideState: 1
+    m_Value: 64
+  stepSize:
+    <debugId>k__BackingField: stepSize
+    m_OverrideState: 1
+    m_Value: 1
+  noiseMethod:
+    <debugId>k__BackingField: noiseMethod
+    m_OverrideState: 1
+    m_Value: 0
+  denoiser:
+    <debugId>k__BackingField: denoiser
+    m_OverrideState: 1
+    m_Value: 2
+  accumFactor:
+    <debugId>k__BackingField: accumFactor
+    m_OverrideState: 1
+    m_Value: 1
+  ambientStored:
+    <debugId>k__BackingField: ambientStored
+    m_OverrideState: 0
+    m_Value: 0
+  ambientIntensity:
+    <debugId>k__BackingField: ambientIntensity
+    m_OverrideState: 0
+    m_Value: 1
+  ambientLight:
+    <debugId>k__BackingField: ambientLight
+    m_OverrideState: 0
+    m_Value:
+      r: 0
+      g: 0
+      b: 0
+      a: 1
+    hdr: 0
+  ambientGroundColor:
+    <debugId>k__BackingField: ambientGroundColor
+    m_OverrideState: 0
+    m_Value:
+      r: 0
+      g: 0
+      b: 0
+      a: 1
+    hdr: 0
+  ambientEquatorColor:
+    <debugId>k__BackingField: ambientEquatorColor
+    m_OverrideState: 0
+    m_Value:
+      r: 0
+      g: 0
+      b: 0
+      a: 1
+    hdr: 0
+  ambientSkyColor:
+    <debugId>k__BackingField: ambientSkyColor
+    m_OverrideState: 0
+    m_Value:
+      r: 0
+      g: 0
+      b: 0
+      a: 1
+    hdr: 0

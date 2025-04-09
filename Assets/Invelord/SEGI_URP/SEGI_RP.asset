@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf2edee5c58d82540a51f03df9d42094, type: 3}
-  m_Name: PC_RPAsset
+  m_Name: SEGI_RP
   m_EditorClassIdentifier: 
   k_AssetVersion: 12
   k_AssetPreviousVersion: 12
@@ -18,6 +18,9 @@ MonoBehaviour:
   m_RendererData: {fileID: 0}
   m_RendererDataList:
   - {fileID: 11400000, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
+  - {fileID: 11400000, guid: 86a980468ecfa88488c646b988b3e464, type: 2}
+  - {fileID: 11400000, guid: 199e07e6fa9f12c40a005e66a937d311, type: 2}
+  - {fileID: 11400000, guid: 64eb571c7b70fb74fa898b9450b9954e, type: 2}
   m_DefaultRendererIndex: 0
   m_RequireDepthTexture: 1
   m_RequireOpaqueTexture: 1
@@ -53,12 +56,12 @@ MonoBehaviour:
   m_AdditionalLightsShadowResolutionTierHigh: 1024
   m_ReflectionProbeBlending: 1
   m_ReflectionProbeBoxProjection: 1
-  m_ShadowDistance: 50
-  m_ShadowCascadeCount: 4
+  m_ShadowDistance: 100
+  m_ShadowCascadeCount: 1
   m_Cascade2Split: 0.25
   m_Cascade3Split: {x: 0.1, y: 0.3}
   m_Cascade4Split: {x: 0.12299999, y: 0.2926, z: 0.53599995}
-  m_CascadeBorder: 0.107758604
+  m_CascadeBorder: 0.101
   m_ShadowDepthBias: 0.1
   m_ShadowNormalBias: 0.5
   m_AnyShadowsSupported: 1
@@ -78,11 +81,11 @@ MonoBehaviour:
   m_UseAdaptivePerformance: 1
   m_ColorGradingMode: 0
   m_ColorGradingLutSize: 32
+  m_AllowPostProcessAlphaOutput: 0
   m_UseFastSRGBLinearConversion: 0
   m_SupportDataDrivenLensFlare: 1
   m_SupportScreenSpaceLensFlare: 1
   m_GPUResidentDrawerMode: 0
-  m_UseLegacyLightmaps: 0
   m_SmallMeshScreenPercentage: 0
   m_GPUResidentDrawerEnableOcclusionCullingInCameras: 0
   m_ShadowType: 1
@@ -109,6 +112,7 @@ MonoBehaviour:
   m_PrefilterDebugKeywords: 1
   m_PrefilterWriteRenderingLayers: 0
   m_PrefilterHDROutput: 1
+  m_PrefilterAlphaOutput: 0
   m_PrefilterSSAODepthNormals: 0
   m_PrefilterSSAOSourceDepthLow: 1
   m_PrefilterSSAOSourceDepthMedium: 1

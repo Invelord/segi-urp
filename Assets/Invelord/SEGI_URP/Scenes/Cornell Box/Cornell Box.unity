@@ -20,9 +20,9 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientEquatorColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -156,7 +157,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.19215688, g: 0.4745098, b: 0.23974748, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -206,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.99998134, z: -0.0061086393, w: 0}
-  m_LocalPosition: {x: 0, y: 7.2826076, z: 21.66}
+  m_LocalPosition: {x: 0, y: 5.6, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -256,6 +257,77 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855c24b21068ca6449a4680af0c5645e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sundepthRendererIndex: 1
+  voxelizationRendererIndex: 2
+  voxeltracingRendererIndex: 3
+  giCullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  shadowSpaceSize: 25
+  sun: {fileID: 410087040}
+  skyColor: {r: 1, g: 0.95446694, b: 0.8254717, a: 0}
+  voxelSpaceSize: 55
+  innerOcclusionLayers: 2
+  voxelResolution: 256
+  infiniteBounces: 1
+  followTransform: {fileID: 0}
+  cones: 24
+  coneTraceSteps: 8
+  coneLength: 0.287
+  coneWidth: 3.67
+  occlusionStrength: 0.67
+  nearOcclusionStrength: 0
+  occlusionPower: 4
+  coneTraceBias: 1.01
+  nearLightGain: 0
+  giGain: 0.43
+  secondaryBounceGain: 2.96
+  softSunlight: 0
+  skyIntensity: 0
+  doReflections: 1
+  reflectionSteps: 16
+  enableDithering: 0
+  reduceShinyArtifact_Reflections: 0
+  reflectionConeTraceBias: 1
+  reflectionOcclusionPower: 10
+  reflectionOcclusionStrength: 30
+  reflectionFarOcclusionStrength: 100
+  reflectionFarthestOcclusionStrength: 100
+  reflectionDitherOcclusionPower: 100
+  skyReflectionIntensity: 1
+  reflectionsNearOcclusionStrength: 0
+  reflectionConeLength: 1.55
+  reflectionConeWidth: 7
+  voxelAA: 1
+  gaussianMipFilter: 1
+  farOcclusionStrength: 4
+  farthestOcclusionStrength: 4
+  secondaryCones: 16
+  secondaryTraces: 32
+  secondaryLength: 1
+  secondaryWidth: 0.86
+  secondaryOcclusionStrength: 1.12
+  sphericalSkylight: 0
+  sunDepthTexture: {fileID: 0}
+  volumeTextures:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &354298169
 PrefabInstance:
   m_ObjectHideFlags: 0
