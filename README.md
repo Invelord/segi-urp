@@ -30,3 +30,4 @@
 
 <h2>Credits</h2>
 - https://github.com/sonicether/SEGI
+- https://github.com/jiaozi158/UnitySSPathTracingURP
