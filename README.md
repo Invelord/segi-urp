@@ -23,5 +23,9 @@ SEGI URP is a fully dynamic global illumination which includes both indirect dif
   <li>Light Leaking in some areas.</li>
 </ol>
 
+<h2>Breakdown Summary</h2>
+SEGI URP use the following process. Firstly, external cameras are deployed to render voxels (including voxel shadow map). Next, to keep things simple, a fullscreen shader is used to trace the voxel and compute both reflections and indirect diffuse gi. This process is often done in separate passes, however for simplicity, we combined them in one fullscreen shadergraph. We aimed to make things more user-friendly but in the end it actually makes it more complex and very very confusing. Below are some screenshots of various textures / buffers / whatever you want to call them which contributes to the final result of the global illumination.
+![Screenshot](voxel-gi-process.jpg)
+
 Credits:
 - https://github.com/sonicether/SEGI
